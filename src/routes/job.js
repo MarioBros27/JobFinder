@@ -165,9 +165,6 @@ export default function Job() {
                                     <li>Tener un enfoque siempre orientado al resultado.</li>
                                     <li>Disponibilidad de transporte y responsable.</li>
                                 </ul>
-                                {/* <List>
-                                    <ListItem sx={{ display: 'list-item' }}> asdhiuia</ListItem>
-                                </List> */}
                             </Grid>
                         </Grid>
                         {jobId > 0 &&
