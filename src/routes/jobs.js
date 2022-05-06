@@ -6,7 +6,9 @@ import Button from '@mui/material/Button';
 import React from "react";
 const jobso = [
     {
-        id: 1
+        id: 1,
+        title: "Front end developer",
+        description: ""
     },
     {
         id: 2
@@ -59,12 +61,12 @@ function Jobs() {
                                         xs={10}>
                                         <Grid item xs={12} >
                                             <Typography component={Link} to={`/jobs/${job.id}`} align="left" variant="h4" sx={{color:"#000",textDecoration: "none"}}>
-                                                Front end developer
+                                            Gerente de calidad especializado en sector panadero
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={12} align="left">
                                             <Typography variant="h6" component="div">
-                                                Google
+                                                Grupo Bimbo
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={12} align="left">
