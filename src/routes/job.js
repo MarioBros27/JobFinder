@@ -170,17 +170,19 @@ export default function Job() {
                                 </List> */}
                             </Grid>
                         </Grid>
-                        <Grid item container
-                            direction="column"
-                            justifyContent="center"
-                            alignItems="center">
-                            <Grid item xs={12}>
-                                <Button size="large" sx={{backgroundColor:"#62f664",}}>
-                                    aplicar al puesto
-                                </Button>
-                            </Grid>
+                        {jobId > 0 &&
+                            <Grid item container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center">
+                                <Grid item xs={12}>
+                                    <Button size="large" sx={{ backgroundColor: "#62f664", }}>
+                                        aplicar al puesto
+                                    </Button>
+                                </Grid>
 
-                        </Grid>
+                            </Grid>
+                        }
                     </Grid>
 
 

@@ -7,6 +7,7 @@ import Jobs from './routes/jobs';
 import Job from './routes/job'
 import Home from './routes/home'
 import Error from './routes/error'
+import Profile from './routes/profile'
 import {
   BrowserRouter,
   Routes,
@@ -22,7 +23,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="jobs" element={<Jobs />} />
           <Route path="/jobs/:jobId" element={<Job />} />
-          
+          <Route path="profile" element={<Profile/>} />
           <Route path="home" element={<Home />} />
         </Route>
         <Route path="*" element={<Error />} />

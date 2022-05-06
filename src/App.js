@@ -36,7 +36,7 @@ function App() {
 
           <Button color="inherit"><u>Menú</u></Button>
           <Link to="/jobs" style={{ color: "#fff" }}><Button color="inherit"><u>Trabajos</u></Button></Link>
-          <Button color="inherit"><u>Perfil</u></Button>
+          <Link to="/profile" style={{ color: "#fff" }}><Button color="inherit"><u>Perfil</u></Button></Link>
           <Button color="inherit"><u>Preguntas Frecuentes</u></Button>
         </Toolbar>
 
