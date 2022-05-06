@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Jobs from './routes/jobs';
+import Job from './routes/job'
+import Home from './routes/home'
+import Error from './routes/error'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="jobs" element={<Jobs />} />
+          <Route path="/jobs/:jobId" element={<Job />} />
+          
+          <Route path="home" element={<Home />} />
+        </Route>
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
