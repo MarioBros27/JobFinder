@@ -13,6 +13,7 @@ export default function Home() {
                 color: "#fff"
             }}
         >
+        <img style={{position:"absolute", left:-3, top:-3, width: 330, height: 240}}src={`${process.env.PUBLIC_URL}/logo.png`}/>
             <div
                 style={{ minHeight: "70px", minWidth: "100%" }}
             />
