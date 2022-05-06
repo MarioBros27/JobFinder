@@ -2,6 +2,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Outlet, Link } from "react-router-dom";
@@ -41,8 +42,32 @@ function App() {
         </Toolbar>
 
       </AppBar>
-     
+
       <Outlet />
+      <footer style={{ backgroundColor: "#000", paddingTop: 20, paddingBottom: 20 }}>
+        <Grid container direction="row"
+          justifyContent="center"
+          alignItems="center">
+          <Grid item container xs={7}>
+            <Grid container item xs={6}>
+              <Grid item xs={12}>
+                <Typography variant="h8" sx={{ color: "#fff" }}> JobFinder de México ©</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography variant="h8" sx={{ color: "#fff" }}> Miguel Allende 1789, Col. Insurgentes, CDMX</Typography>
+              </Grid>
+            </Grid>
+            <Grid container item xs={6}>
+              <Grid item xs={12}>
+                <Typography variant="h8" sx={{ color: "#fff" }}> Contacto</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography variant="h8" sx={{ color: "#fff" }}> 555-51-23432</Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </footer>
     </ThemeProvider>
 
   );
