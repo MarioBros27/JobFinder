@@ -35,7 +35,7 @@ function App() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           </Typography>
 
-          <Button color="inherit"><u>Menú</u></Button>
+          <Link to="/" style={{ color: "#fff" }}><Button color="inherit"><u>Menú</u></Button></Link>
           <Link to="/jobs" style={{ color: "#fff" }}><Button color="inherit"><u>Trabajos</u></Button></Link>
           <Link to="/profile" style={{ color: "#fff" }}><Button color="inherit"><u>Perfil</u></Button></Link>
           <Button color="inherit"><u>Preguntas Frecuentes</u></Button>
